@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+    color: #fff;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+/*
+% is dependent on height of the parent element
+vh is dependent on height of the viewport
+vw is dependent on width of the viewport
+fullform of vh is viewport height
+*/
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#page1 h1{
+    font-size: 8.5vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 8.5vw;
+}
+
+#page1 h1 svg{
+    height: 6vw;
+    border-radius: 50%; 
+    width: 6vw;
+    background-color: green;
+}
+#page1 h1 svg:hover{
+    size: 100%;
+    transition: all 0.7s ease-in-out;
+    background-color: green;
+    rotate: 360deg;
+}
+
+#page1 p{
+    text-align: center;
+    font-weight: 400;
+    margin-top: 3vh;
+    display: flex;
+    align-items: center;
+}
+nav{
+    position: fixed;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 2vw 4vw;
+    justify-content: space-between;
+    padding: 2vw 10.4vw;
+}
+.nav-part2{
+    display: flex;
+    gap: 2vw;
+}
+
+.nav-part2 h3{
+    font-size: 0.76vw;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+button{
+    padding: 0.5vw 1.5vw;
+    border: none;
+    background-color: #111;
+    color: #fff;
+    font-size: 0.76vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+button:hover{
+    size: 100%;
+    transition: all 0.3s ease-in-out;
+    background-color: green;
+    border-radius: 100px;
+    padding: auto;
+
+}
+/*
+when we hover over the nav-part2 h3, the color of the text changes to green
+as css part will be:
+
+nav:hover #nav-bottom h3{
+    color: green;
+}
+
+*/
+#moving-div{
+    background-color: #111;
+    filter: brightness(100%);
+    margin-top: 10vh;
+    position: absolute;
+    bottom: 3%;
+    width: 50%;
+    white-space: nowrap;
+    padding: 1.2vw;
+    overflow: hidden;
+}
+#moving-div .move{
+    display: inline-block;
+    gap: 2vw;
+    padding: 2vw 4vw;
+    align-items: center;
+    animation: mobe 9s linear infinite;
+}
+#moving-div .move img{
+    height: 6vw;
+    width: 6vw;
+    margin: 0 1.2vw;
+}
+
+@keyframes mobe {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+#blur-left{
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    background: linear-gradient(to right, #111,transparent);
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+#blur-right{
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    background: linear-gradient(to right,transparent, #111);
+    z-index: 2;
+    top: 0;
+    right: 0;
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+    position:relative;
+    padding: 0vw 10.5vw;
+    padding-bottom: 5vw;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #333;
+    justify-content: space-between;
+}
+#page2-left{
+    height: 100%;
+    width: 40%;
+    /* background-color: #333; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 3vw 0;
+}
+#page2-right{
+    height: 100%;
+    width: 50%;
+    /* background-color: #333; */
+}
+#page2-left p{
+    font-size: 1.2vw;
+}
+.right-elem {
+    position: relative;
+    padding-top: 2vw;
+    padding-bottom: 5vw;
+    border-bottom: 1px solid #111;
+    cursor: pointer; /* Add cursor pointer to indicate it's clickable */
+}
+
+.right-elem:hover {
+    background-color: #111; /* Change background color on hover */
+}
+
+.right-elem:hover h2 {
+    color: green; /* Change text color of h2 on hover */
+}
+
+.right-elem .right-content {
+    cursor: pointer; /* Add cursor pointer to indicate it's clickable */
+}
+
+.right-elem img {
+    height: 10vw;
+    width: 10vw;
+    border-radius: 50%;
+    object-fit: cover;
+    opacity: 0;
+    position: absolute;
+    scale: 0;
+    pointer-events: none; /* Prevents the image from being clickable */
+}
+
+.right-elem:hover img {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* CSS */
+.download-button {
+    background-color: #333;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    background: grey;
+    transition: background-color 0.3s ease-in-out; /* add transition effect */
+  }
+  
+  .download-button:hover {
+    background-color: #34C759; /* green color on hover */
+    transform: scale(1.05); /* slight animation on hover */
+  }
+  
+  .download-button:active {
+    transform: scale(0.95); /* slight animation on click */
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .container {
+    background-color: #282828;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.container {
+    background-color: #333;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 10%;
+}
+body{
+    background-color: #111;
+}
+h1 {
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #383838;
+    color: #fff;
+    resize: vertical;
+}
+
+button {
+    display: inline-block; /* Change display property to inline-block */
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.social-icons {
+    list-style: none;
+    padding: auto;
+    margin: 10px;
+    text-align: center; /* Center the icons */
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 260px; /* Adjust spacing between icons */
+}
+
+.social-icons li:last-child {
+    margin-right: 0; /* Remove margin from the last icon */
+}
+
+.social-icons img {
+    width: 40px; /* Adjust icon size */
+    height: auto; /* Maintain aspect ratio */
+}

@@ -1,0 +1,7 @@
+.main{
+    display:flex;
+    background-color:"blue";
+}
+.cross{
+    color:red;
+}

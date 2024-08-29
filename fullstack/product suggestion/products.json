@@ -1,0 +1,8 @@
+[
+    { "id": 1, "name": "Apple", "price": 1.2, "description": "Fresh green apple", "image": "images/apple.jpeg" },
+    { "id": 2, "name": "Bat", "price": 0.5, "description": "A Strong bat", "image": "" },
+    { "id": 3, "name": "Ball", "price": 2.0, "description": "Smooth Ball", "image": "" },
+    { "id": 4, "name": "Toy", "price": 3.0, "description": "Beautyful toy", "image": "" },
+    { "id": 5, "name": "Laptop", "price": 2.5, "description": "HP laptop", "image": "" },
+    { "id": 6, "name": "Shoes", "price": 1.8, "description": "Adidas shoes", "image": "" }
+]
