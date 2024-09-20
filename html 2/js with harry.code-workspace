@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../js with harry"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../React"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "html 2"
+	}
+}

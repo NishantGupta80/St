@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   label,input{
+    margin:10px;
+   }
+</style>
+<body>
+    <form action="http://127.0.0.1:3000/fileUpload" method="post" enctype="multipart/form-data">
+    <div class="main">
+    <label for="fname">FirstName:</label><input id="fname" placeholder="Enter Your Name"><br>
+    <label for="fname">LastName:</label><input id="lname" placeholder="Enter Your SurName"><br>
+    <label for="email">email:</label><input id="email" type="email" placeholder="Enter Your Email"><br>
+    <label for="password">Password</label><input id="password" placeholder="Enter Your Password"><br>
+    <label for="cPassword">Confirm Password</label><input id="fname" placeholder="Confirm Your Password">
+    <label for="image">Upload Your image</label><input type="file" name="personalImage" >
+    </div>
+
+    <div class="links">
+    <button type="submit">Submit</button>
+    <a>Not registered? Sign Up Now</a>
+
+</div>
+</form>
+
+    
+</body>
+</html>

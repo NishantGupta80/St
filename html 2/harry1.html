@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let p=new Promise(function(resolve,reject){
+ setTimeout(function(){
+    console.log("i will be printed after 10 seconds");
+    resolve();
+ },10000);
+})
+
+ p.then(()=>{
+    console.log("promise resolved");
+})
+    </script>
+</body>
+</html>

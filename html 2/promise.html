@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+const record1=new Promise(function(resolve,reject){
+    resolve("video 1 recoeded");
+})
+const record2=new Promise(function(resolve,reject){
+    resolve("video 2 recoeded");
+})
+const record3=new Promise(function(resolve,reject){
+    resolve("video 3 recoeded");
+})
+Promise.all([
+    record1,
+    record2,
+    record3
+]).then(function(message){
+    console.log(message);
+})
+</script>
+</html>

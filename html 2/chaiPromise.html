@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+const promise1= new Promise(function(resolve,reject)
+{
+    setTimeout(function(){
+        resolve("nishant");//it will be skipped by compiler,it can't be resolved now because  some tasks of this function is still in pending.it will run when function ends!
+    console.log("promise 1 is asynced");
+    },4000)
+})
+promise1.then(function(message){
+    console.log("promise resolved "+ message);  // output will be promise 1 is asynced promise resolved by nishant.
+
+}).catch((error)=>{
+    console.log(error);
+})
+
+    </script>
+</body>
+</html>

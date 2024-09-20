@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      var total=0;
+fetch("https://dummyjson.com/products")
+.then( function(res){
+   return res.json();
+}).then((data)=>{
+    var total=0;
+    console.log(data);
+    data.products.forEach( function(x){
+        if(x.category==="smartphones")
+        {
+          total=total+x.stock;
+        }
+    })
+    console.log(total);
+
+})
+
+//.then((data)=>console.log(data));
+
+
+
+
+    </script>
+</body>
+</html>

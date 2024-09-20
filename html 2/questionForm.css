@@ -1,0 +1,78 @@
+#heading1{
+    font-family: Arial, sans-serif;
+            color:white;
+}
+#heading{
+   border:2px solid black;
+   background-color:rgb(9, 168, 97);
+   
+}
+.container{
+    display:flex;
+}
+#blue{
+background-color:rgb(18, 124, 205);
+    font-family: Arial, sans-serif;
+    color:white;
+    font-weight:bold;
+    margin:20px 8px;
+    height:35px;
+    border-radius:5px;
+    
+}
+#search{
+    margin:25px 10px;
+    height:20px;
+}
+.contents{
+    background-color:rgb(248, 245, 242);
+    max-height:1000px;
+    max-width:1000px;
+    min-height:500px;
+    min-width:500px;
+    border-top:1px solid grey;
+}
+.bluebtn{
+    display:flex;
+}
+#welcome{
+    color:black;
+    font-family: Arial, sans-serif;
+}
+.welp{
+    font-family: Arial, sans-serif;
+    font-weight:bold;
+}
+.rig{
+    margin:20px;
+}
+#sub{
+    height:25px;
+    margin-bottom:20px;
+    display:block;
+}
+.subm{
+    background-color:rgb(18, 124, 205);
+    font-family: Arial, sans-serif;
+    color:white;
+    font-weight:bold;
+    margin:20px 8px;
+    height:35px;
+    border-radius:5px;
+    display:block;
+
+}
+.pasteQ{
+    border-bottom:1px solid black;
+    font-family: Arial, sans-serif;
+    
+}
+.PS{
+    color:rgb(146, 143, 143);   
+    margin:10px;
+}
+.PP{
+    font-weight:bold;
+    color:rgb(146, 143, 143);   
+    margin:10px;
+}
